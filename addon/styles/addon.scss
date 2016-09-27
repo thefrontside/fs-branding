@@ -1,4 +1,7 @@
 @import "normalize";
+@import "fonts";
+@import "variables";
+@import "btn";
 
 html {
   box-sizing: border-box;
@@ -16,6 +19,13 @@ html,
 
 .ember-view {
   display: inline;
+}
+
+html, body {
+  color: $regent-gray;
+  font-size: 16px;
+  font-family: $primary;
+  line-height: 1.5;
 }
 
 .page-content-border {
