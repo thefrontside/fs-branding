@@ -7,9 +7,10 @@ module.exports = {
   isDevelopingAddon: function() { return true; },
 
   included: function(app) {
+    this._super.included(app);
     process.env.enableAssets = app.options.fsBranding.enableAssets || false;
 
-    this._super.included(app);
+    app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.min.css');
   },
 
   treeForPublic: function(tree) {
