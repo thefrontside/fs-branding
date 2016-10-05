@@ -1,12 +1,37 @@
 # Fs-branding
 
-This README outlines the details of collaborating on this Ember addon.
+An addon that holds the styles & assets for frontside open source
+ember addons.
 
 ## Installation
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+``` bash
+ember install fs-branding
+```
+
+In your `ember-cli-build.js` you have to specifically enable the
+assets:
+
+``` javascript
+fsBranding: {
+  enableAssets: true
+}
+```
+
+Then you need to include the basic structure in your
+`application.hbs`:
+
+``` handlebars
+<div class="page-content-border">
+  <div class="page-content">
+    {{outlet}}
+  </div>
+</div>
+```
+
+This addon includes bootstrap v4 automatically. So you can use all of
+the CSS from bootstrap 4.
+
 
 ## Running
 
