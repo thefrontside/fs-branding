@@ -14,12 +14,14 @@ html {
 p {
   line-height: 30px;
 }
+
+a {
+  color: #26abe8;
+}
+
 body,
 html {
   height: 100%;
-}
-
-html, body {
   color: $regent-gray;
   font-size: 16px;
   font-family: $primary;
@@ -42,4 +44,9 @@ html, body {
 
 .addon-nav {
   margin-top: 25px;
+}
+.nav-link {
+  &.active {
+    background-color: #26abe8 !important;
+  }
 }
