@@ -11,14 +11,12 @@ html {
   box-sizing: inherit;
 }
 
-body,
-html,
-.ember-view {
-  height: 100%;
+p {
+  line-height: 30px;
 }
-
-.ember-view {
-  display: inline;
+body,
+html {
+  height: 100%;
 }
 
 html, body {
@@ -40,4 +38,8 @@ html, body {
   height: 100%;
   padding: 20px;
   background: white;
+}
+
+.addon-nav {
+  margin-top: 25px;
 }
