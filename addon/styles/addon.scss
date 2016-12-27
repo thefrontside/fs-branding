@@ -33,6 +33,8 @@ body {
   flex-direction: column;
 }
 
+// hack since ember insits on throwing a random div
+// that messes up the height of the border.
 body > .ember-view {
   flex: 1;
 }
